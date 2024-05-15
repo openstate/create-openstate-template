@@ -1,0 +1,24 @@
+<script>
+	import { onMount } from "svelte";
+	import "../scss/variables.scss";
+	import "../scss/bootstrap.scss";
+	import "../scss/app.scss";
+	import { browser } from "$app/environment";
+	import NavBar from '$lib/NavBar.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import OpenstateBar from '$lib/OpenstateBar.svelte';
+
+	onMount(async () => {
+		if (!browser) return;
+		await import("bootstrap");
+	});
+</script>
+
+<OpenstateBar />
+<NavBar/>
+<main>
+  <div class="container">
+    <slot />
+  </div>
+</main>
+<Footer/>
