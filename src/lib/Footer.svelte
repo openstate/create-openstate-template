@@ -2,7 +2,7 @@
   import OSFLogo from '$lib/assets/logo-openstate.png';
 </script>
 <!-- Footer -->
-<footer class="footer mt-auto py-3 bg-body-tertiary">
+<footer class="fixed-bottom footer mt-auto py-3 bg-body-tertiary">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -16,3 +16,4 @@
     </div>
   </div>
 </footer>
+

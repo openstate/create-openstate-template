@@ -1,5 +1,3 @@
-<div class="container">
-  <h1>Welcome to this Open State Foundation project</h1>
-  <p class="lead">This project was generated using the <code>openspending-create</code> package.</p>
-  <p>To edit this page, open your favourite editor/IDE and edit this page: <code>`src/routes/+page.svelte`</code></p>
-</div>
+<h1>Welcome to this Open State Foundation project</h1>
+<p class="lead">This project was generated using the <code>openspending-create</code> package.</p>
+<p>To edit this page, open your favourite editor/IDE and edit this page: <code>`src/routes/+page.svelte`</code></p>
