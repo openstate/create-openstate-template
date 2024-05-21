@@ -1,6 +1,6 @@
 
     <div class="container-fluid">
-        <table class="table table-hover">
+        <table class="table table-hover custom-table-hover">
             <thead>
               <tr>
                 <th scope="col">Titel</th>
@@ -35,3 +35,9 @@
             </tbody>
           </table>
     </div>
+
+    <style>
+    .custom-table-hover tbody tr:hover {
+        background-color: red; /* Vervang dit door de gewenste kleur */
+    }
+    </style>
