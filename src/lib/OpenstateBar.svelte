@@ -11,9 +11,19 @@
     </div>
   </div>
 </section>
+<div class="topbar-scroll-opaque d-flex flex-row fixed-top">
+</div>
+
 <style>
+  .topbar-scroll-opaque {
+    margin-top: 40px;
+    height:20px;
+    background-color: var(--white);
+    opacity: 0.8;
+  }
+
   .topbar {
-      background-color: var(--primary-color);
+      background-color: var(--petrol);
       height: 40px;
   }
 

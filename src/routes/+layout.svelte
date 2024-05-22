@@ -14,9 +14,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>~DESCRIPTION~</title>
+	<meta property="og:title" content="~DESCRIPTION~" />
+</svelte:head>
+
 <OpenstateBar />
 <NavBar/>
-<main>
+<main class="mt-3 mb-5">
   <div class="container">
     <slot />
   </div>

@@ -1,14 +1,14 @@
 :root {
     /* kleuren */
-    --primary-color: #015C6E;
-    --primary-hover: #58B8D0;
-    --secondary-color: #A62789;
-    --secondary-hover: #CC43B2;
-    --third-color: #A0D0E1;
-    --white: #fff;
-    --black: #000;
-    --bs-btn-active-bg: #015c6e;
-    --bs-btn-hover-color: #015c6e;
+    // --primary-color: #015C6E;
+    // --primary-hover: #58B8D0;
+    // --secondary-color: #A62789;
+    // --secondary-hover: #CC43B2;
+    // --third-color: #A0D0E1;
+    // --white: #fff;
+    // --black: #000;
+    // --bs-btn-active-bg: #015c6e;
+    // --bs-btn-hover-color: #015c6e;
 
     /*Algemeen*/
     --text-decoration: none;
@@ -39,9 +39,22 @@ body {
 }
 
 h1 {
+    color: var(--petrol);
     font-family: var(--font-family-headings);
     font-weight: var(--font-weight-headings);
     font-style: var(--font-style-headings);
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--magenta);
+}
+
+a {
+    color: var(--petrol);
+}
+
+a:hover {
+    color: var(--petrol-light);
 }
 
 p {
@@ -50,81 +63,9 @@ p {
     font-style: var(--font-style-body); 
 }
 
-.topbar {
-    background-color: var(--primary-color);
-    height: 40px;
-}
 
-.line {
-    width: 2px;
-    height: 30px;
-    background-color: var(--white);
-    margin-left: 15px;
-    margin-right: 15px;
-}
 
-.button-help-mee {
-    background-color: var(--white);
-    color: var(--primary-color);
-    margin: 2px;
-    padding: 2px 7px 2px 7px;
-    font-size: 12px;
-    border-radius: var(--border-radius);
-    font-weight: 500;
-}
 
-.navbar {
-    background-color: var(--white);
-    height: 80px;
-    margin: 20px;
-    margin-top: 50px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 0.5rem;
-}
-
-.navbar-brand {
-    font-weight: 500;
-    color: var(--primary-color);
-    font-size: 24px;
-}
-
-.primary-button {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    font-size: var(--button-font-size);
-    border-radius: var(--border-radius);
-    padding: var(--button-padding);
-    text-decoration: var(--text-decoration);
-}
-
-.login-button:hover {
-    background-color: var(--secondary-hover);
-    transition: var(--hover-transition);
-}
-
-.navbar-toggler {
-    border: none;
-    font-size: 1.25rem;
-}
-
-.navbar-toggler:focus,
-.btn-close:focus {
-    box-shadow: none;
-    outline: none;
-}
-
-.nav-link,
-.nav-link.active {
-    color: var(--black);
-    font-weight: 300;
-    position: relative;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--primary-color);
-}
 
 /* @media (max-width: 991px) {
     .login-button {
