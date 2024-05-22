@@ -23,7 +23,7 @@
             <a class="nav-link mx-lg-2" href="#">Over</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/voorbeelden" class:active={$page.route.id === '/voorbeelden'}>Voorbeelden</a>
+            <a class="nav-link mx-lg-2" href="/voorbeelden" class:active={$page.route.id?.startsWith('/voorbeelden')}>Voorbeelden</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Contact</a>
@@ -52,6 +52,16 @@
     </button>
   </div>
 </nav>
+
+
+<div class="container">
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Voorbeelden</li>
+    </ol>
+  </nav>
+</div>
 
 <!-- Einde navbar -->
 <style>
@@ -133,5 +143,20 @@
         visibility: visible;
     }
 }
+
+:root{
+  /* kleur klopt nog niet */
+  --breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
+  --breadcrumb-divider-color: var(--petrol);
+}
+
+.breadcrumb-item {
+  opacity: .7;
+}
+
+.breadcrumb-item.active {
+  opacity: 1;
+}
+
 
 </style>
