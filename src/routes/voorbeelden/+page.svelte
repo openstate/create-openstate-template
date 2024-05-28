@@ -3,4 +3,8 @@
     <li><a href="/voorbeelden/tabel">Tabellen</a></li>
     <li><a href="/voorbeelden/filteren">Filteren</a></li>
     <li><a href="/voorbeelden/knoppen">Knoppen</a></li>
+    <li><a href="/voorbeelden/tabs">Tabs</a></li>
+    <li><a href="/voorbeelden/inloggen">Inloggen</a></li>
+    <li><a href="/voorbeelden/formulieren">Formulieren</a></li>
+    <li><a href="/voorbeelden/over">Over ons</a></li>
 </ul>
