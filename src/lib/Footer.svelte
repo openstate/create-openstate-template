@@ -20,6 +20,14 @@
     }
   }
   
+  .socials a {
+    color: var(--petrol)
+  }
+
+  .socials a:hover {
+    color: var(--petrol-light)
+  }
+  
   
   </style>
 <!-- Footer -->
@@ -43,3 +51,4 @@
     </div>
   </div>
 </footer>
+

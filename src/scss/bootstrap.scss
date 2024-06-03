@@ -40,18 +40,6 @@
 @import 'bootstrap/scss/helpers';
 @import 'bootstrap/scss/utilities/api';
 
-:root {
-	// --magenta: rgb(200, 46, 148);
-	--teak: rgb(97, 168, 169);
-	--teak-darker: rgb(68, 119, 120);
-	--cyan: rgb(108, 202, 209);
-
-	--bs-body-color: rgb(61, 74, 46);
-	--bs-accordion-active-bg: var(--teak);
-	--bs-accordion-active-color: #fff;
-}
-
-
 div.alert img {
 	width: 24px;
 	margin-right: 8px;
@@ -66,11 +54,7 @@ div.alert-success img {
 	filter: invert(18%) sepia(22%) saturate(1214%) hue-rotate(100deg) brightness(94%) contrast(101%);
 }
 
-main a {
-	// color: var(--purple);
-	text-decoration: none;
-	border-bottom: rgba(76, 33, 110, 0.3) solid 1px;
-}
+
 
 main a:hover {
 	// color: var(--magenta);

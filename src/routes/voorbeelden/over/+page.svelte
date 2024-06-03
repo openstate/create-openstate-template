@@ -97,7 +97,7 @@
 					<p>
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias architecto eum
 						adipisci perferendis nesciunt cupiditate modi delectus quis reiciendis. Expedita facere
-						distinctio praesentium exercitationem sequi cum quae quod quas itaque.
+						distinctio praesentium exercitationem sequi cum quae quod quas itaque. <a href="#">linkje!</a>
 					</p>
                     {/each}
 				</div>
@@ -135,7 +135,7 @@
 		border-radius: var(--border-radius);
 	}
 
-    a:hover {
+    .nav a:hover {
         background-color: var(--cyan-light);
         border-bottom: none;
     }
