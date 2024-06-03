@@ -3,7 +3,7 @@
   import { page } from '$app/stores'
 </script>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar mx-4 mb-4 navbar-expand-lg position-static">
   <div class="container">
     <a class="navbar-brand me-auto" href="#">
       <img src="{exampleLogo}" width="120" alt="Logo ~DESCRIPTION~">
@@ -25,11 +25,24 @@
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="/voorbeelden" class:active={$page.route.id?.startsWith('/voorbeelden')}>Voorbeelden</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Contact</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Doe mee
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Programmeren</a></li>
+              <li><a class="dropdown-item" href="#">Vrijwilliger worden</a></li>
+              <li><a class="dropdown-item" href="#">Nieuwsbrief</a></li>
+              <li><a class="dropdown-item" href="#">Volg ons</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Doneer</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">FAQ</a>
+            <a class="nav-link mx-lg-2" href="/voorbeelden/formulieren">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="/voorbeelden/FAQ">FAQ</a>
           </li>
         </ul>
         <form class="d-flex text-end" role="search" action="/zoek">
@@ -68,10 +81,9 @@
     .navbar {
     background-color: var(--white);
     height: 80px;
-    margin: 20px;
-    margin-top: 50px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    margin-top: 0;
 }
 
 .navbar-brand {
@@ -79,20 +91,6 @@
     color: var(--primary-color);
     font-size: 24px;
 }
-
-/* .login-button {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    font-size: var(--button-font-size);
-    border-radius: var(--border-radius);
-    padding: var(--button-padding);
-    text-decoration: var(--text-decoration);
-} */
-
-/* .login-button:hover {
-    background-color: var(--secondary-hover);
-    transition: var(--hover-transition);
-} */
 
 .navbar-toggler {
     border: none;
@@ -158,5 +156,12 @@
   opacity: 1;
 }
 
+.dropdown li a:hover {
+  background-color: var(--cyan-light);
+}
+
+.dropdown li a .active {
+  color: var(--petrol)
+}
 
 </style>

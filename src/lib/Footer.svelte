@@ -11,6 +11,7 @@
 	footer {
 		margin-top: 200px;
 		border-top: solid var(--petrol) 1px;
+    margin-bottom: 0;
 	}
   @media(max-width: 576px) {
     .text-end, .text-center, .text-start {
@@ -19,9 +20,10 @@
     }
   }
   
+  
   </style>
 <!-- Footer -->
-<footer class="fixed-bottom footer mt-auto py-3 bg-body-tertiary text-body-tertiary">
+<footer class="footer mt-auto py-3 bg-body-tertiary text-body-tertiary mb-0">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12 text-start">

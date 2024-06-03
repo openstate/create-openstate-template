@@ -134,4 +134,16 @@
 	div {
 		border-radius: var(--border-radius);
 	}
+
+    a:hover {
+        background-color: var(--cyan-light);
+        border-bottom: none;
+    }
+
+	.active {
+        background-color: var(--cyan-light);
+        border-bottom: none;
+    }
+
+	
 </style>

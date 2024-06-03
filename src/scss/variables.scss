@@ -132,5 +132,36 @@
         --bs-btn-disabled-border-color: var(--petrol);       
     }
 
+    // alerts
+    .alert-primary {
+        background-color: var(--petrol);
+        border: none;
+        color: white;
+    }
+
+    .alert-secondary {
+        background-color: var(--cyan);
+        border: none;
+        color: var(--petrol)
+    }
+
+    .alert-success {
+        background-color: var(--magenta);
+        border: none;
+        color: white;
+    }
+
+    .alert-danger {
+        background-color: rgb(255, 96, 96);
+        border: none;
+        color: white;
+    }
+
+    .alert-warning {
+        background-color: rgb(255, 237, 102);
+        border: none;
+    }
+
 
 }
+

@@ -1,7 +1,9 @@
 <h1>Formulieren</h1>
 
-<div class="col-lg-7 p-5">
-    <h2>Neem contact op</h2>
+<p></p>
+
+<div class="col-lg-5 p-5">
+    <h3 class="mb-3">Neem contact op</h3>
 	<div class="no-shadow form-container svelte-nixaq6">
 		<form method="POST" novalidate="">
 			<div class="form-floating mb-3">
@@ -42,7 +44,7 @@
 					rows="3"
 					placeholder="typ uw bericht…"
 					name="bericht"
-					style="height: 150px;"
+					style="height: 100px;"
 				></textarea> <label for="bericht" class="form-label">Bericht</label>
 			</div>
 

@@ -49,33 +49,8 @@
 	--bs-body-color: rgb(61, 74, 46);
 	--bs-accordion-active-bg: var(--teak);
 	--bs-accordion-active-color: #fff;
-	// --bs-link-color-rgb: var(--purple);
-	// --bs-link-hover-color-rgb: var(--magenta);
-	// --bs-primary: var(--purple);
-	// --bs-btn-color: var(--purple);
-	// --form-label-color: var(--purple);
 }
 
-.btn-primary {
-	// --bs-btn-bg: var(--purple);
-	// --bs-btn-border-color: var(--purple);
-	// --bs-btn-hover-bg: var(--purple-darker);
-	// --bs-btn-hover-border-color: var(--purple-darker);
-}
-
-.btn-outline-primary {
-	// --bs-btn-color: var(--purple);
-	// --bs-btn-border-color: var(--purple);
-	// --bs-btn-hover-bg: var(--purple);
-	// --bs-btn-hover-border-color: var(--purple);
-	// --bs-btn-active-bg: var(--purple);
-	// --bs-btn-disabled-border-color: var(--purple);
-}
-
-.btn-primary:disabled {
-//   background-color: var(--purple);
-//   border-color: var(--purple);
-}
 
 div.alert img {
 	width: 24px;
@@ -101,11 +76,8 @@ main a:hover {
 	// color: var(--magenta);
 	border-bottom: rgba(76, 33, 110, 1) solid 1px;
 }
-h1,
-h2,
-h3 {
-	// color: var(--magenta);
-}
+
 h1 img {
 	width: 320px;
 }
+
