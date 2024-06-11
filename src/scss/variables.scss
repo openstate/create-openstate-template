@@ -64,6 +64,8 @@
     --btn-secondary-hover: #CC43B2;
     --btn-hover-transition: 0.3s background-color;
 
+    --bs-blue: rgb(1, 92, 110);
+
     .btn {
         font-size: var(--btn-font-size);
         border-radius: var(--btn-border-radius);
@@ -161,5 +163,16 @@
         background-color: rgb(255, 237, 102);
         border: none;
     }
+
+    .text-bg-dark {
+        --text-bg-dark: white;
+        background-color: var(--petrol) !important; 
+    }
+
+    .card {
+        border: none
+    }
+
+    
 }
 

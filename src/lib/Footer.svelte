@@ -21,7 +21,7 @@
   }
   
   .socials a {
-    color: var(--petrol)
+    color: var(--petrol);
   }
 
   .socials a:hover {
@@ -39,11 +39,15 @@
         <a href="https://openstate.eu"><img src="{OSFLogo}" alt="Logo Open State Foundation" width="120"></a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 text-center socials">
-				<a href="https://mastodon.nl/@OpenState" title="Open State Foundation | Mastodon" ><Mastodon/></a>
+				<a href="https://mastodon.nl/@OpenState" title="Open State Foundation | Mastodon"><Mastodon/></a>
 				<a href="https://twitter.com/OpenStateEU" title="Open State Foundation | X/Twitter" ><TwitterX/></a>
 				<a href="https://www.linkedin.com/company/open-state-foundation/" title="Open State Foundation | LinkedIn" ><Linkedin/></a>
 				<a href="https://github.com/OpenState" title="Open State Foundation | Github" ><Github/></a>
 				<a href="https://openstate.eu/nl/contact/" title="Open State Foundation | Email" ><EnvelopeFill/></a>
+       <div class="row mt-3">
+        <a href="#" class="fs-6">privacy</a>
+        <a href="#">algemene voorwaarden</a>
+      </div> 
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 text-end">
         <img src="{exampleLogo}" alt="Logo ~DESCRIPTION~" style="height:36px;">

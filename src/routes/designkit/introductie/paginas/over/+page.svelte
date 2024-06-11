@@ -64,7 +64,7 @@
 	<div class="row">
 		<!-- Sidebar Navigation for Large Screens -->
 		<div class="col-lg-2 d-none d-lg-block shadow">
-			<nav id="navbar-example3" class="flex-column align-items-stretch pt-3">
+			<nav id="navbar-example3 position-sticky" class="flex-column align-items-stretch pt-3">
 				<nav class="nav nav-pills flex-column">
 					<a class="nav-link" href="#item-1">1. Hoofditem</a>
 					<nav class="nav nav-pills flex-column">
@@ -82,7 +82,7 @@
 		</div>
 
 		<!-- Main Content -->
-		<div class="col-lg-8 col-sm-10 ms-lg-4">
+		<div class="scrollspy col-lg-8 col-sm-10 ms-lg-4">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<div
 				data-bs-spy="scroll"
@@ -101,6 +101,10 @@
 					</p>
                     {/each}
 				</div>
+				<div id="item-1-1">
+					<h5>Item 1-1</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae iure odio velit atque? Tempore dolorum, doloribus optio totam, doloremque maxime recusandae suscipit accusamus porro perspiciatis at facere iure officia.</p>
+				  </div>
 				<div>
 					<h3 id="item-2">Hoofditem 2</h3>
                     {#each Array(5) as _, i}
@@ -141,9 +145,16 @@
     }
 
 	.active {
-        background-color: var(--cyan-light);
+        background-color: var(--cyan-light) !important;
         border-bottom: none;
+		color: var(--petrol);
     }
+
+	.scrollspy {
+		height: 500px;
+		overflow: auto;
+		margin-top: .5rem;
+	}
 
 	
 </style>

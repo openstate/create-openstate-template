@@ -44,6 +44,9 @@
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="/voorbeelden/FAQ">FAQ</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="/designkit/introductie">Design Kit</a>
+          </li>
         </ul>
         <form class="d-flex text-end" role="search" action="/zoek">
           <input
