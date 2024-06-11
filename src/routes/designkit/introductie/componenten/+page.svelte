@@ -8,84 +8,77 @@
 
 <div class="row gap-2">
     <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <a href="/voorbeelden/alerts">
+      <a href="/designkit/introductie/componenten/voorbeelden/alerts">
         <div>
           <h4>Alerts</h4>
         </div>
       </a>
     </div>
     <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/accordion">
+        <a href="/designkit/introductie/componenten/voorbeelden/accordion">
           <div>
             <h4>Accordion</h4>
           </div>
         </a>
       </div>
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/filteren">
+        <a href="/designkit/introductie/componenten/voorbeelden/filteren">
           <div>
             <h4>Filteren</h4>
           </div>
         </a>
       </div>
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/formulieren">
+        <a href="/designkit/introductie/componenten/voorbeelden/formulieren">
           <div>
-            <h4>Formulieren</h4>
+            <h4>Contact</h4>
           </div>
         </a>
       </div>
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/over">
-          <div>
-            <h4>Pagina met inhoudsopgave</h4>
-          </div>
-        </a>
-      </div>
-      <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/inloggen">
+        <a href="/designkit/introductie/componenten/voorbeelden/inloggen">
           <div>
             <h4>Inloggen</h4>
           </div>
         </a>
       </div>   
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/knoppen">
+        <a href="/designkit/introductie/componenten/voorbeelden/knoppen">
           <div>
             <h4>Knoppen</h4>
           </div>
         </a>
       </div> 
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/tabel">
+        <a href="/designkit/introductie/componenten/voorbeelden/tabel">
           <div>
             <h4>Tabel</h4>
           </div>
         </a>
       </div> 
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/tabs">
+        <a href="/designkit/introductie/componenten/voorbeelden/tabs">
           <div>
             <h4>Tabs</h4>
           </div>
         </a>
       </div> 
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/typografie">
+        <a href="/designkit/introductie/componenten/voorbeelden/typografie">
           <div>
             <h4>Typografie</h4>
           </div>
         </a>
       </div> 
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/cards">
+        <a href="/designkit/introductie/componenten/voorbeelden/kaarten">
           <div>
             <h4>Cards</h4>
           </div>
         </a>
       </div> 
       <div class="card shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <a href="/voorbeelden/inline">
+        <a href="/designkit/introductie/componenten/voorbeelden/inline">
           <div>
             <h4>Inline HTML elementen</h4>
           </div>

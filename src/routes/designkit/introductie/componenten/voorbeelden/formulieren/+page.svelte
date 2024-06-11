@@ -2,9 +2,9 @@
 
 <p></p>
 
-<div class="col-lg-5 p-5">
-    <h3 class="mb-3">Neem contact op</h3>
-	<div class="no-shadow form-container svelte-nixaq6">
+<form class="row g-3">
+    <div class="shadow col-md-8 rounded-4 p-4">
+        <h2 class="mb-4">Contactformulier</h2>
 		<form method="POST" novalidate="">
 			<div class="form-floating mb-3">
 				<input
@@ -53,16 +53,5 @@
             </div>
 		</form>
 	</div>
-</div>
+</form>
 
-<style>
-	div {
-		box-shadow: var(--box-shadow);
-		border-radius: var(--border-radius);
-	}
-
-	div.no-shadow {
-		box-shadow: none;
-		border-radius: var(--border-radius);
-	}
-</style>

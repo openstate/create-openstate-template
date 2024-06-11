@@ -22,9 +22,6 @@
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Over</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/voorbeelden" class:active={$page.route.id?.startsWith('/voorbeelden')}>Voorbeelden</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Doe mee
@@ -45,7 +42,7 @@
             <a class="nav-link mx-lg-2" href="/voorbeelden/FAQ">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/designkit/introductie">Design Kit</a>
+            <a class="nav-link mx-lg-2" href="/designkit/introductie" class:active={$page.route.id?.startsWith('/designkit')}>Design Kit</a>
           </li>
         </ul>
         <form class="d-flex text-end" role="search" action="/zoek">
@@ -74,7 +71,7 @@
   <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Voorbeelden</li>
+      <li class="breadcrumb-item active" aria-current="page">Design kit</li>
     </ol>
   </nav>
 </div>

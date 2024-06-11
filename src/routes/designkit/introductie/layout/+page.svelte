@@ -6,14 +6,14 @@
 
 <div class="row gap-2">
     <div class="card rounded-4 shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <a href="/voorbeelden/jumbotron">
+      <a href="/designkit/introductie/layout/jumbotron">
         <div>
           <h4>Met jumbotron</h4>
         </div>
       </a>
     </div>
 	<div class="card rounded-4 shadow p-3 col-sm-6 col-md-4 col-lg-3 mb-4">
-		<a href="/voorbeelden/kolommen">
+		<a href="/designkit/introductie/layout/kolommen">
 		  <div>
 			<h4>Kolomstructuren</h4>
 		  </div>

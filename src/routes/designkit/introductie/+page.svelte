@@ -24,9 +24,9 @@
       </div>
       <div class="card rounded-5 shadow p-2" style="width: 18rem;">
         <div class="card-body text-center">
-          <h5 class="card-title">Voorbeelden</h5>
+          <h5 class="card-title">Voorbeeld pagina's</h5>
           <p class="card-text">Bekijk voorbeelden van
-            websites die met de Design Kit zijn gemaakt voor inspiratie en ideeën.</p>
+            pagina's die met de Design Kit zijn gemaakt voor inspiratie en ideeën.</p>
           <a href="/designkit/introductie/paginas" class="card-link btn btn-secondary mt-4">Naar voorbeelden</a>
         </div>
       </div>

@@ -1,6 +1,4 @@
-<script>
-      import stockPhoto from '$lib/assets/stock-image-politics.jpg'
-</script>
+
 
 <h1>Cards</h1>
 <div>
