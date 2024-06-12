@@ -133,6 +133,14 @@
         --bs-btn-disabled-color: var(--petrol);
         --bs-btn-disabled-border-color: var(--petrol);       
     }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        --bs-nav-pills-link-active-bg: var(--cyan);
+        color: white;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover {
+        color: var(--petrol)
+    }
 
     // alerts
     .alert-primary {

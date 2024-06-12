@@ -1,9 +1,11 @@
 <script>
   import exampleLogo from '$lib/assets/example-logo.png';
   import { page } from '$app/stores'
+	import { Search, SearchHeart } from 'svelte-bootstrap-icons';
 </script>
+
 <!-- Navbar -->
-<nav class="navbar mx-4 mb-4 navbar-expand-lg position-static">
+<nav class="navbar mx-4 mb-4 navbar-expand-lg fixed-top mt-5">
   <div class="container">
     <a class="navbar-brand me-auto" href="#">
       <img src="{exampleLogo}" width="120" alt="Logo ~DESCRIPTION~">
@@ -45,26 +47,38 @@
             <a class="nav-link mx-lg-2" href="/designkit/introductie" class:active={$page.route.id?.startsWith('/designkit')}>Design Kit</a>
           </li>
         </ul>
-        <form class="d-flex text-end" role="search" action="/zoek">
-          <input
-            class="form-control me-2"
-            type="search"
-            name="q"
-            id="zoekveld"
-            placeholder="Zoek&hellip;"
-            aria-label="Zoek"
-          />
-          <input type="hidden" name="zoekmethode" value="EN">
-          <button class="btn btn-outline-primary" type="submit">Zoek</button>
-        </form>
+        <div class="gap-5">
+        <button class="btn btn-outline-primary">Inloggen</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#zoekformulier" aria-controls="zoekformulier">
+          <Search/>
+        </button>     
+      </div> 
       </div>
     </div>
-    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
   </div>
 </nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="zoekformulier" aria-labelledby="zoekformulierLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="zoekformulierLabel">Zoekformulier</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="d-flex text-end" role="search" action="/zoek">
+      <input
+        class="form-control me-2"
+        type="search"
+        name="q"
+        id="zoekveld"
+        placeholder="Zoek&hellip;"
+        aria-label="Zoek"
+      />
+      <input type="hidden" name="zoekmethode" value="EN">
+      <button class="btn btn-outline-primary" type="submit">Zoek</button>
+    </form>
+  </div>
+</div>
 
 
 <div class="container">
@@ -164,4 +178,9 @@
   color: var(--petrol)
 }
 
+.offcanvas {
+  background-color: white;
+}
+
 </style>
+

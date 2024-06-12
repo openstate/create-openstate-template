@@ -144,11 +144,7 @@
         border-bottom: none;
     }
 
-	.active {
-        background-color: var(--cyan-light) !important;
-        border-bottom: none;
-		color: var(--petrol);
-    }
+	
 
 	.scrollspy {
 		height: 500px;
