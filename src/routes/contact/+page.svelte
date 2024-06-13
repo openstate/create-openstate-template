@@ -1,12 +1,12 @@
 <h1>Niet gevonden wat je zoekt?</h1>
-<p>Vul het contactformulier in en we antwoorden zo snel mogelijk</p>
+<p class="lead">Vul het contactformulier in en we antwoorden zo snel mogelijk</p>
 
 <form class="row g-3">
     <div class="shadow col-md-8 rounded-4 p-4">
         <h2 class="mb-4">Contactformulier</h2>
         <div class="form-floating mb-3">
             <input
-                required=""
+                required
                 type="text"
                 class="form-control form-control-lg fs-5"
                 id="naam"
@@ -16,7 +16,7 @@
         </div>
         <div class="form-floating mb-3">
             <input
-                required=""
+                required
                 type="email"
                 class="form-control form-control-lg fs-5"
                 id="email"
@@ -26,7 +26,7 @@
         </div>
         <div class="form-floating mb-3">
             <input
-                required=""
+                required
                 type="text"
                 class="form-control form-control-lg fs-5"
                 id="onderwerp"
@@ -36,7 +36,7 @@
         </div>
         <div class="form-floating mb-3">
             <textarea
-                required=""
+                required
                 class="form-control form-control-lg fs-5"
                 id="bericht"
                 rows="3"
@@ -47,7 +47,7 @@
         </div>
 
         <div class="col-12 mt-4">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Verstuur</button>
         </div>
     </div>
   </form>

@@ -1,3 +1,8 @@
+<script>
+	import HeaderImage from '$lib/HeaderImage.svelte';
+  import image from '$lib/assets/rechtbank.jpg'
+</script>
+<HeaderImage backgroundImage={image}/>
 <main class="header">
 <div class="overshadow">
 </div>  

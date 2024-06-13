@@ -1,13 +1,61 @@
-<script>
+<script lang="ts">
   import exampleLogo from '$lib/assets/example-logo.png';
   import { page } from '$app/stores'
-	import { Search, SearchHeart } from 'svelte-bootstrap-icons';
-</script>
+	import { Search } from 'svelte-bootstrap-icons';
+  export let title
+  interface MenuItem {
+    title: string,
+    // defaults to url-safe version of title
+    route?: string,
+    menuItems?: Array<Omit<MenuItem, 'menuItems'>>
+  }
+  // const routeToTitle = (term: string): string => term.replace(/^\//, '').slice(0, 1).toLocaleUpperCase() + term.replace(/^\//, '').slice(1)
+	// $: active = (menuItem: MenuItem): boolean => 
+	// 	$page.route.id === menuItem.route || ($page.route.id??'-').split('/', 2).join('/') === menuItem.route
+  //     || (($page.route.id?.startsWith('/gegevens') ?? false) && menuItem.route === '/')
 
+
+	$: current = menuItems.filter(menuItem => {
+    if ($page.route.id === getRoute(menuItem)) return menuItem
+  }).pop()
+
+  const menuItems: MenuItem[] = [
+    { title: 'Home', route: '' },
+    { title: 'Over'},
+    { title: 'Doe mee', menuItems: [
+      {title: 'Programmeren'},
+      {title: 'Vrijwilliger worden'},
+      {title: 'Nieuwsbrief'},
+      {title: 'Volg ons'},
+      {title: '-'},
+      {title: 'Doneer'}
+    ]},
+    { title: 'Contact'},
+    { title: 'FAQ'},
+    { title: 'Design kit', route: 'designkit/introductie'}
+  ]
+
+  const makeUrlSafeString = (input: string): string => 
+      [...input].map(char => 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~'.includes(char) ? char : '-')
+        .join('').toLocaleLowerCase()
+        
+  const getRoute = (menuItem: MenuItem, parentMenuItem?: MenuItem, useHashIfEmpty?: boolean): string => {
+    let baseRoute = ''
+    if (parentMenuItem !== undefined) {
+      baseRoute = getRoute(parentMenuItem, undefined, false) + '/'
+    }
+    const route = menuItem.route ?? 
+    (menuItem.menuItems === undefined || useHashIfEmpty === false ? makeUrlSafeString(menuItem.title) : '#')
+    return (baseRoute.startsWith('/') ? baseRoute : '/' + baseRoute) + route
+  }
+</script>
+<svelte:head>
+  <title>~DESCRIPTION~ | {title ?? current?.title}</title>
+</svelte:head>
 <!-- Navbar -->
 <nav class="navbar mx-4 mb-4 navbar-expand-lg fixed-top mt-5">
   <div class="container">
-    <a class="navbar-brand me-auto" href="#">
+    <a class="navbar-brand me-auto" href="/">
       <img src="{exampleLogo}" width="120" alt="Logo ~DESCRIPTION~">
     </a>
 
@@ -18,34 +66,34 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" class:active={$page.route.id === '/'} aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Over</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Doe mee
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Programmeren</a></li>
-              <li><a class="dropdown-item" href="#">Vrijwilliger worden</a></li>
-              <li><a class="dropdown-item" href="#">Nieuwsbrief</a></li>
-              <li><a class="dropdown-item" href="#">Volg ons</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Doneer</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/voorbeelden/formulieren">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/voorbeelden/FAQ">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="/designkit/introductie" class:active={$page.route.id?.startsWith('/designkit')}>Design Kit</a>
-          </li>
+          {#each menuItems as menuItem}
+            {#if menuItem.menuItems !== undefined}
+            <li class="nav-item dropdown" class:active={($page.route.id??'').startsWith(getRoute(menuItem, undefined, false))}>
+              <a class="nav-link dropdown-toggle" href="{'#'}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {menuItem.title}
+              </a>
+              <ul class="dropdown-menu">
+                {#each menuItem.menuItems as submenuItem}
+                <li>
+                  {#if submenuItem.title === '-'}
+                  <hr class="dropdown-divider">
+                  {:else}
+                  <a class="dropdown-item" href="{getRoute(submenuItem, menuItem)}">
+                    {submenuItem.title}
+                  </a>
+                  {/if}
+                </li>
+                {/each}
+              </ul>
+            </li>
+            {:else}
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" class:active={($page.route.id??'').startsWith(getRoute(menuItem, undefined, false))} aria-current="page" href="{getRoute(menuItem)}">
+                {menuItem.title}
+              </a>
+            </li>
+            {/if}
+          {/each}
         </ul>
         <div class="gap-5">
         <button class="btn btn-outline-primary">Inloggen</button>

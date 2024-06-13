@@ -5,6 +5,8 @@
 	layout. Deze kit biedt ons alle tools die we nodig hebben om binnen enkele minuten een
 	professionele website te creëren. </p>
 
+<p>Om een nieuw project te starten op basis van deze designkit, typ je in een terminal venster: </p>
+<pre><code>npm create openstate@latest</code></pre>
 <div class="col-lg-12 d-flex gap-3 mt-5">
       <div class="card rounded-5 shadow p-2" style="width: 18rem;">
         <div class="card-body text-center">
